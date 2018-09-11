@@ -1,0 +1,15 @@
+{
+	"name": "Hackaton OLX app",
+    "gcm_sender_id": "157796024602"
+}
+
+{
+"message": {
+    "token": "YOUR_TARGET_APP_TOKEN",
+    "data": {
+        "title": "FCM Message",
+        "body": "This is an FCM Message",
+        "icon": "https://shortcut-test2.s3.amazonaws.com/uploads/role_image/attachment/10461/thumb_image.jpg",
+        "link": "https://yourapp.com/somewhere"
+    }
+}

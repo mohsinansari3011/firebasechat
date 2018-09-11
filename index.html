@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script> -->
+   <!--  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script> -->
+   
+</head>
+<body>
+    My firebase app 
+
+
+
+<input type="text" id="txtusername" value="mohsin">
+<input type="text" id="txtemail" value="mohsin@gmail.com">
+<input type="text" id="txtpassword" value="mohsin123">
+<button id="btnsignup" onclick="signUp()">signup</button>
+<br/><br/><br/>
+
+<input type="text" id="message">
+<button id="btn" onclick="displayNotification()">Push</button>
+
+
+
+
+
+<br/><br/><br/>
+
+
+
+<h3>this is admin</h3>
+<textarea id="txtmessageadmin"> </textarea>
+<button id="btnadmin" onclick="ChatAdmin()">Send Message</button>
+
+<br/><br/><br/>
+
+<h3>this is user</h3>
+<textarea id="txtmessageuser"> </textarea>
+<button id="btnuser" onclick="ChatUser()">Send Message</button>
+
+
+<input type="hidden" id="hiduser">
+<input type="hidden" id="hidadmin">
+<input type="hidden" id="hidroom">
+
+
+<table border="1" id="usersdata">
+<thead><th>Username</th> <th>Email Address</th> <th>Status</th> <th>Admin ID</th> <th>Chat</th></thead>
+    </table>
+
+<table border="1" id="messages">
+<thead><th>user</th> <th>Message</th> <th>time</th> </thead>
+    </table>
+    <script src="app.js"></script> 
+<script type="text/javascript">
+	
+	if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+
+		//     navigator.serviceworker
+		//     		 .register('service-worker.js')
+		// .then((registration) => {
+		//     const messaging = firebase.messaging();
+		//     messaging.useServiceWorker(registration);
+		//     return messaging.getToken();
+		// })
+		// .then((token) => {
+		//     //....
+		// });
+}
+
+
+</script>
+</body>
+</html>
